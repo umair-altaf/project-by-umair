@@ -10,6 +10,11 @@
     <div id="Navbar">
         <div id="topBar">
             <h5 id="webName">iCloudNoteBook</h5>
+            <div id="hamburger-menu">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+            </div>
         </div>
         <div id="topNav">
             <ul>
@@ -22,6 +27,7 @@
                     <button class="buttons" class="btns">Sign Up</button>
                 </div>
             </ul>
+          >
         </div>
     </div>
     
@@ -56,4 +62,9 @@
             
     </div>
 </body>
+<script>// Toggle class 'active' on hamburger-menu when clicked
+    document.getElementById('hamburger-menu').addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+    </script>
 </html>

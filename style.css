@@ -113,3 +113,121 @@
 #pra{
     font-size: 17px;
 }
+
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    #webName {
+        float: none;
+        text-align: center;
+    }
+    
+    #topNav {
+        padding: 20px 0;
+    }
+    
+    #topNav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #topNav ul li {
+        padding: 10px 0;
+    }
+
+    #button {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Banner */
+    #heading {
+        font-size: 40px;
+    }
+
+    #pra {
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    /* Picture section */
+    .pics {
+        width: 100%;
+    }
+
+    /* Future selection */
+    #head {
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Navbar */
+    #webName {
+        float: none;
+        text-align: center;
+    }
+
+    #topNav {
+        padding: 20px 0;
+    }
+
+    #topNav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #topNav ul li {
+        padding: 10px 0;
+    }
+
+    #button {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Banner */
+    #heading {
+        font-size: 50px;
+    }
+
+    #pra {
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    /* Picture section */
+    .pics {
+        width: 50%;
+    }
+
+    /* Future selection */
+    #head {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    /* Hamburger menu */
+    #hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    .hamburger-bar {
+      width: 30px;
+      height: 4px;
+      background-color: rgb(182, 4, 4);
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  
+    /* Hide the original topNav on small screens and tab-sized screens */
+    #topNav {
+      display: none;
+    }
+  
+    /* Show the topNav when the hamburger menu is clicked */
+    #hamburger-menu.active + #topNav {
+      display: flex;
+    }
+  }
